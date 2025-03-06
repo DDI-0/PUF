@@ -29,12 +29,11 @@ begin
 	-- output goes into the first inverter in the chain
 	ro_chain(0) <= enable nand ro_chain(ro_length - 1);
 
-	-- TODO: place inverters
+	--  place inverters
 	inverters: for i in 1 to ro_length - 1 generate
 		ro_chain(i) <= not ro_chain(i - 1);
 	end generate inverters;
-	-- for ... generate
-	-- end generate
+	
 
 	-- drive osc_out with output of last inverter in the chain
 	osc_out <= ro_chain(ro_length - 1);
