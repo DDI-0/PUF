@@ -15,7 +15,7 @@ entity control_unit is
 		
 		counter_enable:	out	std_logic;
 		counter_reset:	out	std_logic;
-		challenge:		out	std_logic_vector(2*challenge_bits - 1 downto 0);
+		challenge:		out	std_logic_vector(2*challenge_bits - 1 downto 0); 
 		store_response:	out	std_logic;
 		done:	out	std_logic
 	);
