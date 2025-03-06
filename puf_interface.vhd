@@ -17,7 +17,7 @@ entity puf_interface is
         -- PUF Control Signals
         puf_start  : out std_logic;              -- Signal to start the PUF
         puf_done   : in  std_logic;              -- Signal indicating PUF completion
-        puf_output : in  std_logic_vector(255 downto 0) -- 256-bit PUF output (shift register)
+        puf_output : in  std_logic_vector(255 downto 0) -- 256-bit PUF output (shift register width)
     );
 end entity puf_interface;
 	
