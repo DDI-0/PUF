@@ -8,6 +8,6 @@ Project Components
 The design consists of the following key components:\
 Ring Oscillators: Built using VHDL with n-1 inverters and a control NAND gate.\
 Control Unit: For forwarding challenges to the RO-PUF and managing responses.\
-Response Storage: Mechanism to store the unclonable function’s responses.
+Response Storage: Mechanism to store the unclonable function’s responses.\
 SoC Integration: Making results accessible to the rest of the system.
 
