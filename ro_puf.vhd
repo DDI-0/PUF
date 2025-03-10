@@ -27,15 +27,12 @@ architecture puf of ro_puf is
 		variable t2: std_logic_vector(31 downto 0);
 		variable t3: std_logic_vector(31 downto 0);
 	begin
-		-- the trick here is that a power of two when written in binary only
-		-- has one bit set and the rest are 0
+		
 		t1 := std_logic_vector(to_unsigned(n, 32));
 		t2 := std_logic_vector(to_unsigned(n - 1, 32));
-		-- we now use a trick to clear the lowest bit that is set by doing
-		-- bitwise anding of n and (n - 1)
+		
 		t3 := t1 and t2;
-		-- if n is a power of 2, then we would clear its only set bit, so t3
-		-- should be 0
+		
 		return to_integer(unsigned(t3)) = 0;
 	end function is_power_two;
 
@@ -90,15 +87,12 @@ begin
 				enable => enable,
 				osc_out => osc_out(i)
 			);
-		-- instance of a ring oscillator, the enable input comes from this
-		-- entity's port declaration, the output goes into osc_out(i)
+		
 	end generate group_a;
 
-	-- TODO: generate group_b
 	group_b: for i in ro_count / 2 to ro_count - 1 generate
 	begin
-		-- instance of a ring oscillator, the enable input comes from this
-		-- entity's port declaration, the output goes into osc_out(i)
+		
 		ro: entity work.ring_oscillator
 			generic map (
 					ro_length => ro_length
@@ -111,16 +105,13 @@ begin
 
 	-- generate counters
 	counters: for i in 0 to ro_count - 1 generate
-		-- new declarations can go here
 	begin
 		ctr: process(reset, osc_out(i)) is
-			-- declarations for the process here
 		begin
 			if reset = '0' then
 				counter(i) <= 0;	-- reset counter
 			elsif rising_edge(osc_out(i)) then
 				if enable = '1' then
-					-- TODO: increment counter by 1
 					if counter(i) = 2**16 - 1 then
 						counter(i) <= 0;
 					else
