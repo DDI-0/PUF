@@ -18,11 +18,11 @@ RO-PUF is a ring oscillator-based Physical Unclonable Function (PUF) implemented
 
 1. Preparing the Memory-Mapped Interface
 
-  * The PUF is connected to the Cortex-A9 cores via a memory-mapped interface, enabling efficient access to its responses.
+    * The PUF is connected to the Cortex-A9 cores via a memory-mapped interface, enabling efficient access to its responses.
 
 2. Packaging the IP Core
 
-  * The RO-PUF is packaged as an IP core for easy integration into the FPGA design.
+    * The RO-PUF is packaged as an IP core for easy integration into the FPGA design.
 
 3. Instances and Interconnects
 
