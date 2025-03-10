@@ -11,3 +11,4 @@ Control Unit: For forwarding challenges to the RO-PUF and managing responses.\
 Response Storage: Mechanism to store the unclonable function’s responses.\
 SoC Integration: Making results accessible to the rest of the system.
 
+![image](https://github.com/user-attachments/assets/b3c254a9-1f28-4cca-8de1-7930c670eeaa)
