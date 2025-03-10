@@ -1,5 +1,5 @@
-**RO-PUF: Ring Oscillator-Based Physical Unclonable Function
-**
+**RO-PUF: Ring Oscillator-Based Physical Unclonable Function**
+
 RO-PUF is a ring oscillator-based Physical Unclonable Function (PUF) implemented in VHDL. It is designed to be integrated into a Cyclone V SoC and made accessible from the Cortex-A9 cores. The project involves manual placement to ensure that oscillator frequencies primarily depend on process variations.
 
 Features
