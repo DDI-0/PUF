@@ -36,7 +36,7 @@ RO-PUF is a ring oscillator-based Physical Unclonable Function (PUF) implemented
 
     * The final step involves generating the FPGA bitstream, ensuring that all components are correctly placed and configured.
 
-## Implementation
+### Implementation
 
 Language: Implemented in VHDL.
 
