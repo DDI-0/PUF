@@ -26,17 +26,17 @@ RO-PUF is a ring oscillator-based Physical Unclonable Function (PUF) implemented
 
 3. Instances and Interconnects
 
-Proper instantiation and interconnection ensure seamless communication between the PUF and other components in the SoC.
+    * Proper instantiation and interconnection ensure seamless communication between the PUF and other components in the SoC.
 
 4. Toplevel Entity Creation
 
-The top-level entity encapsulates all necessary components and defines the overall structure of the PUF system.
+    * The top-level entity encapsulates all necessary components and defines the overall structure of the PUF system.
 
 5. Readying the Bitstream
 
-The final step involves generating the FPGA bitstream, ensuring that all components are correctly placed and configured.
+    * The final step involves generating the FPGA bitstream, ensuring that all components are correctly placed and configured.
 
-Implementation
+## Implementation
 
 Language: Implemented in VHDL.
 
