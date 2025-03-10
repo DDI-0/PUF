@@ -26,7 +26,7 @@ architecture structural of puf_toplevel is
     -- Internal signals
     signal counter_enable: std_logic;
     signal counter_reset:  std_logic;
-    signal challenge: std_logic_vector(7 downto 0);  -- Adjusted to match ro_puf (8 bits)
+    signal challenge: std_logic_vector(7 downto 0);  
     signal store_response: std_logic;
     signal puf_response:   std_logic;
 
