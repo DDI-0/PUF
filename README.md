@@ -11,10 +11,10 @@ RO-PUF is a ring oscillator-based Physical Unclonable Function (PUF) implemented
 
 
 * Functionality
- *Provides all challenges to the PUF.
- *Selects a counter from each oscillator group.
- *Compares results and shifts data into a shift register.
- *Connecting the PUF to Cortex-A9
+ * Provides all challenges to the PUF.
+ * Selects a counter from each oscillator group.
+ * Compares results and shifts data into a shift register.
+ * Connecting the PUF to Cortex-A9
 
 1. Preparing the Memory-Mapped Interface
 
