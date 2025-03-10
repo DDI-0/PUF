@@ -54,5 +54,5 @@ Integration: Accessible via the Cortex-A9 processor through a memory-mapped inte
 
 Manual Placement: Used to enhance the uniqueness of frequency variations.
 
-Results:
+Results:\
 ![image](https://github.com/user-attachments/assets/b3c254a9-1f28-4cca-8de1-7930c670eeaa)
