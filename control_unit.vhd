@@ -6,7 +6,7 @@ entity control_unit is
 	generic (
 		challenge_bits:		positive := 4;
 		clock_frequency:	positive := 50;	-- in MHz
-		delay_us:			positive := 1000		-- in microseconds
+		delay_us:			positive := 1		-- in microseconds
 	);
 	port (
 		clock:	in	std_logic;
@@ -15,7 +15,7 @@ entity control_unit is
 		
 		counter_enable:	out	std_logic;
 		counter_reset:	out	std_logic;
-		challenge:		out	std_logic_vector(2*challenge_bits - 1 downto 0); 
+		challenge:		out	std_logic_vector(2*challenge_bits - 1 downto 0);
 		store_response:	out	std_logic;
 		done:	out	std_logic
 	);
@@ -82,7 +82,7 @@ begin
 		end if;
 	end process challenge_process;
 	
-	transition_function: process(state, wait_counter, last_challenge) is
+	transition_function: process(state, wait_counter, last_challenge, challenge_counter) is
 	begin
 		case state is
 			when reset_state => next_state <= enable_state;
