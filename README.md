@@ -4,10 +4,10 @@ RO-PUF is a ring oscillator-based Physical Unclonable Function (PUF) implemented
 
 ## Features
 * Design Components
-  * Ring Oscillators:** Generate unique frequency variations due to process differences.
-  * Control Unit:** Forwards challenges (selects ring oscillators) to the unclonable function.
-  * Response Storage:** Stores the responses from the PUF for later retrieval.
-  * SoC Accessibility:** Makes the PUF results available to the rest of the system.
+  * Ring Oscillators: Generate unique frequency variations due to process differences.
+  * Control Unit: Forwards challenges (selects ring oscillators) to the unclonable function.
+  * Response Storage: Stores the responses from the PUF for later retrieval.
+  * SoC Accessibility: Makes the PUF results available to the rest of the system.
 
 
 Functionality
