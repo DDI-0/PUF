@@ -6,7 +6,7 @@ The RO-PUF is accessible from the Cortex-A9 cores and requires manual placement 
 Project Components
 
 The design consists of the following key components:\
-Ring Oscillators: Built using VHDL with n-1 inverters and a control NAND gate.
+Ring Oscillators: Built using VHDL with n-1 inverters and a control NAND gate.\
 Control Unit: For forwarding challenges to the RO-PUF and managing responses.\
 Response Storage: Mechanism to store the unclonable function’s responses.
 SoC Integration: Making results accessible to the rest of the system.
